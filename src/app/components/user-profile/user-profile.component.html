@@ -1,0 +1,8 @@
+<h1>This is User Profile</h1>
+<h4>{{name.toUpperCase()}}</h4>
+<h4>{{Status}}</h4>
+<h4>{{salary}}</h4>
+
+<button [disabled]="isBtnDisabled">Click ME</button>
+<h1>Input Value - {{inputval}}</h1>
+<input type="text" [value]="inputval" (input)="onchange($event)">
