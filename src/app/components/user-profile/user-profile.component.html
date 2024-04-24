@@ -1,8 +1,21 @@
-<h1>This is User Profile</h1>
-<h4>{{name.toUpperCase()}}</h4>
+<!-- <h1>This is User Profile</h1>
+<h4>{{name }}<h4>
 <h4>{{Status}}</h4>
 <h4>{{salary}}</h4>
+<h2>{{phoneno | countrycode}}</h2>
 
 <button [disabled]="isBtnDisabled">Click ME</button>
 <h1>Input Value - {{inputval}}</h1>
 <input type="text" [value]="inputval" (input)="onchange($event)">
+
+<div>
+    @for (user of user; track user.name) {
+        @if(user.salary > 10000){
+        <h4>Name - {{user.name}}  Status - {{user.isSingle?"Single":"Coder"}}  Salary - {{user.salary}}</h4>
+        }@else {
+            <h4>Name - {{user.name}}  Status - {{user.isSingle?"Single":"Coder"}}  Salary - Hidden</h4>   
+        }
+    }
+</div> -->
+<h1>Name - {{name}}</h1>
+<button (click)="sendData()">Send Data</button>
